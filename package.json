@@ -1,0 +1,33 @@
+{
+  "name": "kivibot-plugin-pixiv",
+  "version": "0.0.0",
+  "description": "QQ 机器人框架 KiviBot 的 pixiv 涩图插件（WIP）",
+  "main": "lib/index.js",
+  "repository": "KiviBotLab/kivibot-plugin-pixiv",
+  "homepage": "https://github.com/KiviBotLab/kivibot-plugin-pixiv#readme",
+  "author": "Viki <hi@viki.moe> (https://github.com/vikiboss)",
+  "scripts": {
+    "dev": "tsc && (concurrently \"tsc -w\" \"tsc-alias -w\")",
+    "build": "tsc && tsc-alias",
+    "test": "ava",
+    "clean": "rimraf lib",
+    "release": "npm run clean && npm run build && npm publish"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "kivibot",
+    "kivibot-plugin"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@kivibot/core": "latest",
+    "@types/node": "^18.11.13",
+    "ava": "^5.1.0",
+    "concurrently": "^7.6.0",
+    "rimraf": "^3.0.2",
+    "tsc-alias": "^1.8.1",
+    "typescript": "^4.9.3"
+  }
+}
